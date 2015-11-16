@@ -14,5 +14,18 @@ function create(req, res){
   })
 }
 //read - Sam
+
 //update - Brian
+
 //destroy - Kevin
+function destroy (req, res){
+  User.findOneAndRemove({_id: req:params.user_id}, function(err, user){
+    if(err) res.send(err)
+    res.json({success: true, message: "user: " + user.user_name + "deleted!"})
+  })
+}
+
+module.exports = {
+
+  ,destroy: destroy
+}
