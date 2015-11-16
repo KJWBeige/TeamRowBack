@@ -1,5 +1,5 @@
 //kevin to finish routes
-var userController = require('../controllers/users_controller.js')
+var usersController = require('../controllers/users_controller.js')
       ,express     = require('express')
     ,userRoutes    = express.Router()
 
